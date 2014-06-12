@@ -1,0 +1,174 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu Test 1</title>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+<link rel="stylesheet" type="text/css" href="css/menu.css">
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:500,800,900' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/bootstrap-theme.css">
+<script>
+ $(function() {
+ 	$("#accordion").accordion();
+ });
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+  $(function() {
+    $( document ).tooltip();
+  });
+
+ </script> 
+</head>
+
+<body>
+
+<!-- Navbar Prototype -->
+
+<nav class="navbar navbar-default" role="navigation">
+  <!-- Brand and toggle get grouped for better mobile display -->
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">Nona's Pizza Kitchen</a>
+  </div>
+
+  <!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Menu</a></li>
+      <li><a href="#">Locations</a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact Us <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </li>
+    </ul>
+    <form class="navbar-form navbar-left" role="search">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div><!-- /.navbar-collapse -->
+</nav>
+
+
+
+
+<!-- Menu Prototype -->
+
+<div id="accordion" class="menu">
+	<h3>Pizza</h3>
+	<div>
+		<table>
+			<tr>
+				<th>Topping</th>
+				<th>Price</th>
+			</tr>
+
+			<tr>
+				<td>Pepperoni</td>
+				<td>$10</td>
+			</tr>
+
+			<tr>
+				<td>Vegetarian</td>
+				<td>$15</td>
+			</tr>
+
+			<tr>
+				<td>Diamonds</td>
+				<td>$145</td>
+			</tr>
+		</table> 
+
+	</div>
+
+	<h3>Family Style</h3>
+	<div>
+		<table>
+			<tr>
+				<th>Dish</th>
+				<th>Price</th>
+			</tr>
+
+			<tr>
+				<td>Lasagna</td>
+				<td>$20</td>
+			</tr>
+
+			<tr>
+				<td>Chicken Parmagiana</td>
+				<td>$25</td>
+			</tr>
+
+		</table> 
+	</div>
+
+	<h3>Sides</h3>
+	<div>
+		<table>
+			<tr>
+				<th>Dish</th>
+				<th>Price</th>
+			</tr>
+
+			<tr>
+				<td>Caesar Salad</td>
+				<td>$5</td>
+			</tr>
+
+			<tr>
+				<td>Italian Wedding Soup</td>
+				<td>$8</td>
+			</tr>
+
+			<tr>
+				<td>Garlic Bread</td>
+				<td>$5</td>
+			</tr>
+		</table> 
+
+	</div>
+
+	<h3>Drinks</h3>
+	<div>
+		<table>
+			<tr>
+				<th>Flavor/Brand</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>Italian Strawberry Soda</td>
+				<td>$5</td>
+			</tr>
+			<tr>
+				<td>Limoncello</td>
+				<td>$5</td>
+			</tr>
+		</table> 
+
+	</div>
+
+
+</div>
+<br />
+<br />
+<!-- Datepicker and Tooltip Prototype -->
+<p><label>Pick a Delivery Date:</label>  <input type="text" id="datepicker"></p>
+<br />
+<p><label for="delivery-time">Choose a delivery time:</label>  <input id="delivery-time" title="We delivery between 2 pm and midnight, Monday through Friday."></p>
+</body>
+</html>
